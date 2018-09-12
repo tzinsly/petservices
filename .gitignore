@@ -1,0 +1,9 @@
+### IntelliJ files ###
+*.iml
+
+### Maven files ###
+mvnw
+mvnw.cmd
+
+### Bin files ###
+/target/
