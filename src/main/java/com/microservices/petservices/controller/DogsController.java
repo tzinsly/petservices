@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -20,21 +21,25 @@ public class DogsController {
     @Autowired
     PetShopRepository petShopRepository;
 
-    @RequestMapping("/pets")
+    //@RequestMapping(value="/petshops", method=RequestMethod.GET)
+    @RequestMapping("/petshops")
     @ResponseBody
     public List<PetShop> returnPets(){
         return petShopRepository.findAll();
     }
 
-    @RequestMapping("/pets/{name}")
+    @RequestMapping("/petshops/{name}")
     @ResponseBody
     public PetShop returnPetsByName(@PathVariable String name){
         return petShopRepository.findByName(name);
     }
 
-    @RequestMapping("/pets/{name}/dogs")
+    /*
+        Not needed anymore, it will be mapped by Sprint Data Rest on the DogRepository...
+     */
+    /*@RequestMapping("/pets/{name}/dogs")
     @ResponseBody
     public Set<Dog> returnDogsForASpecificPet(@PathVariable String name){
         return petShopRepository.findByName(name).getDogs();
-    }
+    }*/
 }
