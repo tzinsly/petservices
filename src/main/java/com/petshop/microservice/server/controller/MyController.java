@@ -1,4 +1,4 @@
-package com.microservices.petservices.controller;
+package com.petshop.microservice.server.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

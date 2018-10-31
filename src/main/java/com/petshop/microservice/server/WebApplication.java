@@ -1,8 +1,8 @@
-package com.microservices.petservices;
+package com.petshop.microservice.server;
 
-import com.microservices.petservices.dao.PetShopRepository;
-import com.microservices.petservices.domain.Dog;
-import com.microservices.petservices.domain.PetShop;
+import com.petshop.microservice.server.dao.PetShopRepository;
+import com.petshop.microservice.server.domain.Dog;
+import com.petshop.microservice.server.domain.PetShop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

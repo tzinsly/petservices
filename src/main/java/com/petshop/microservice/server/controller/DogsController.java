@@ -1,17 +1,14 @@
-package com.microservices.petservices.controller;
+package com.petshop.microservice.server.controller;
 
-import com.microservices.petservices.dao.PetShopRepository;
-import com.microservices.petservices.domain.Dog;
-import com.microservices.petservices.domain.PetShop;
+import com.petshop.microservice.server.dao.PetShopRepository;
+import com.petshop.microservice.server.domain.PetShop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-import java.util.Set;
 
 //import org.springframework.web.bind.annotation.GetMapping;
 

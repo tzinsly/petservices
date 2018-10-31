@@ -1,6 +1,6 @@
-package com.microservices.petservices.dao;
+package com.petshop.microservice.server.dao;
 
-import com.microservices.petservices.domain.PetShop;
+import com.petshop.microservice.server.domain.PetShop;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RestResource;
 

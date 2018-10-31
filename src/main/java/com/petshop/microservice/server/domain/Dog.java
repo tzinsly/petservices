@@ -1,4 +1,4 @@
-package com.microservices.petservices.domain;
+package com.petshop.microservice.server.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

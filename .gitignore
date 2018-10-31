@@ -1,6 +1,9 @@
 ### IntelliJ files ###
 *.iml
 
+### IntelliJ dirs ###
+.idea/
+
 ### Maven files ###
 mvnw
 mvnw.cmd
